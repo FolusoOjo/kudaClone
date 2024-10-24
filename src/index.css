@@ -1,0 +1,11 @@
+:root {
+  font-family: "Mulish", system-ui, Arial, Helvetica, sans-serif;
+}
+
+button {
+  font-family: "Mulish";
+}
+* {
+  margin: 0;
+  padding: 0;
+}
