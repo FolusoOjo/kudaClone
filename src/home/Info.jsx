@@ -1,4 +1,4 @@
-import Card from "./Card";
+import Card from "../components/Card";
 import { FaCreditCard } from "react-icons/fa6";
 import { BiSolidCircleThreeQuarter } from "react-icons/bi";
 import { FaLocationArrow } from "react-icons/fa";
@@ -57,7 +57,7 @@ const Wrapper = styled.div`
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-    background-color: black;
+    /* background-color: black; */
     display: flex;
     align-items: center;
     padding: 0 10px;

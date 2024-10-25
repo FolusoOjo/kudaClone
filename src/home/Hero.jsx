@@ -16,14 +16,14 @@ function Hero() {
             </Text>
             <Buttons>
               <AppleButton>
-                <FaApple size={30} color="#FFF" />
+                <FaApple size={20} color="#FFF" />
                 <But>
                   <p>Download on the</p>
                   <App>App Store</App>
                 </But>
               </AppleButton>
               <AndriodButton>
-                <IoLogoGooglePlaystore size={30} color="#FFF" />
+                <IoLogoGooglePlaystore size={20} color="#FFF" />
                 <But>
                   <p>GET IT ON</p>
                   <Play>Google Play</Play>
@@ -44,7 +44,7 @@ export default Hero;
 
 const Container = styled.div`
   /* background-color: yellow; */
-  margin-top: 80px;
+  margin-top: 70px;
   max-width: 1366px;
   margin-left: auto;
   margin-right: auto;
@@ -53,8 +53,6 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-
-
 `;
 const HeroContainer = styled.div`
   display: flex;
@@ -106,12 +104,9 @@ const Text = styled.p`
 
 const Buttons = styled.div`
   display: flex;
+
   margin-top: 30px;
-  @media (max-width: 800px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+
 `;
 
 const AppleButton = styled.button`
@@ -119,57 +114,75 @@ const AppleButton = styled.button`
   display: flex;
   align-items: center;
   padding: 10px;
-  margin-right: 15px;
+  margin-right: 5px;
   border: none;
   outline: none;
   border-radius: 10px;
   p {
     color: #eee;
-    font-size: 12px;
+    font-size: 8px;
   }
   @media (max-width: 800px) {
-    margin-right: 0;
+    margin-right: 5px;
     margin-bottom: 5px;
+    padding: 6px;
+
+    p {
+      font-size: 7px;
+    }
   }
 `;
 const App = styled.span`
   color: #fff;
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 14px;
+  font-weight: 600;
+
+  @media (max-width: 800px) {
+    font-size: 12px;
+  }
 `;
 const AndriodButton = styled.button`
   background-color: black;
   display: flex;
   align-items: center;
   padding: 5px 13px 5px 10px;
-  margin-left: 15px;
+  margin-left: 7px;
   border: none;
   outline: none;
   border-radius: 10px;
 
   p {
     color: #eee;
-    font-size: 12px;
+    font-size: 8px;
   }
 
   @media (max-width: 800px) {
-    margin-left: 0;
+    margin-left: 5px;
     margin-bottom: 5px;
+
+    p {
+      font-size: 7px;
+    }
   }
 `;
 const Play = styled.span`
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 14px;
+  font-weight: 600;
   color: #fff;
+
+  @media (max-width: 800px) {
+    font-size: 11px;
+
+  }
 `;
 const HeroImg = styled.div`
   img {
     max-width: 500px;
 
     @media (max-width: 800px) {
-        /* border: 2px solid greenyellow; */
-        width: 100%;
-        /* display: none; */
+      /* border: 2px solid greenyellow; */
+      width: 100%;
+      /* display: none; */
       img {
         /* max-width: 300px; */
         border: 2px solid red;
@@ -182,7 +195,7 @@ const HeroImg = styled.div`
 
 const But = styled.div`
   /* border: 2px solid green; */
-  margin-left: 10px;
+  margin-left: 2px;
   font-size: 10px;
   font-weight: 500;
   text-align: left;
