@@ -1,6 +1,6 @@
-import Hero from "../components/Hero";
-import Info from '../components/Info'
-import Text from '../components/Text'
+import Hero from "../home/Hero";
+import Info from '../home/Info'
+import Text from '../home/Text'
 
 function Personal() {
   return (

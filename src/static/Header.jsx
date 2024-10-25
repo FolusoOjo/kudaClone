@@ -60,10 +60,10 @@ const Container = styled.div`
   height: 70px;
   background-color: #fff;
   min-width: 100%;
-  /* position: fixed;
+  position: fixed;
   top: 0;
-  left: 0; */
-  margin-bottom: 50px;
+  left: 0;
+
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   display: flex;
   justify-content: space-between;
