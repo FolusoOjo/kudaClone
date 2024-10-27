@@ -27,4 +27,5 @@ const Bgcolor = styled.div`
   height: calc(100vh - 70px);
   align-items: center;
   display: flex;
+  width
 `;
