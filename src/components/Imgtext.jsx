@@ -1,11 +1,14 @@
 import styled from "styled-components";
-import { IoIosArrowForward } from "react-icons/io";
 
-function TextImg({ bigText, value, link, text, Image, icon }) {
+function Imgtext({ bigText, value, link, text, Image, icon }) {
   return (
     <>
       <Wrapper>
         <Flex>
+          <FlexImg>
+            <img src={Image} alt="" />
+          </FlexImg>
+
           <Text>
             <h2>{bigText}</h2>
             <p>{value}</p>
@@ -14,16 +17,12 @@ function TextImg({ bigText, value, link, text, Image, icon }) {
               {icon}
             </a>
           </Text>
-
-          <FlexImg>
-            <img src={Image} alt="" />
-          </FlexImg>
         </Flex>
       </Wrapper>
     </>
   );
 }
-export default TextImg;
+export default Imgtext;
 
 const Wrapper = styled.div`
   margin-top: 70px;
@@ -35,57 +34,35 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: yellow; */
 
-  @media (max-width: 800px) {
-    margin-top: 70px;
-  }
+  background-color: hotpink;
 `;
 
 const Text = styled.div`
-  /* max-width: 350px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 45%;
 
   h2 {
-    font-size: 38px;
-    max-width: 300px;
+    font-size: 34px;
+    /* text-align: right; */
+    max-width: 400px;
     color: #40196d;
     margin-bottom: 5px;
   }
 
   p {
-    font-size: 14px;
-    color: #000000;
-    /* background-color: yellow; */
+    font-size: 15px;
     margin-bottom: 5px;
-    max-width: 50%;
+    width: 75%;
+    margin-top: 10px;
+    color: white;
   }
   a {
     margin-top: 10px;
     color: #40196d;
     font-size: 14px;
-  }
-
-  @media (max-width: 800px) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    h2 {
-      font-size: 29px;
-      text-align: center;
-      max-width: 60%;
-    }
-    p {
-      font-size: 14px;
-      max-width: 80%;
-      text-align: center;
-    }
-    a {
-      margin-top: 0;
-      text-align: center;
-    }
   }
 `;
 
@@ -93,31 +70,22 @@ const Flex = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: green; */
+  background-color: skyblue;
   width: 85%;
   margin-left: auto;
+  /* flex-wrap: wrap; */
   margin-right: auto;
 
   @media (max-width: 800px) {
-    /* background-color: aqua; */
-    flex-wrap: wrap;
+    background-color: aqua;
   }
 `;
 
 const FlexImg = styled.div`
-  /* border: 2px solid rebeccapurple; */
+  border: 2px solid rebeccapurple;
 
   img {
     width: 420px;
     text-align: center;
-  }
-
-  @media (max-width: 800px) {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    /* img {
-      border: 4px solid brown;
-    } */
   }
 `;
