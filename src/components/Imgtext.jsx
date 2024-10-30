@@ -41,9 +41,11 @@ const Text = styled.div`
   flex-direction: column;
   justify-content: center;
   max-width: 45%;
+  margin-left: 20px;
 
   h2 {
     font-size: 34px;
+    font-weight: 900;
     /* text-align: right; */
     max-width: 400px;
     color: #40196d;
@@ -51,10 +53,12 @@ const Text = styled.div`
   }
 
   p {
-    font-size: 15px;
+    font-size: 16px;
+
     margin-bottom: 5px;
     width: 75%;
-    margin-top: 10px;
+    margin-top: 15px;
+    font-weight: 500;
   }
   a {
     margin-top: 10px;
@@ -69,12 +73,12 @@ const Text = styled.div`
     margin: 10px auto 40px;
 
     h2 {
-      font-size: 22px;
+      font-size: 28px;
       font-weight: 800;
     }
 
     p {
-      font-size: 12px;
+      font-size: 15px;
       text-align: center;
       width: 100%;
       margin-top: 5px;
@@ -86,7 +90,7 @@ const Flex = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 85%;
+  width: 94%;
   margin-left: auto;
   /* flex-wrap: wrap; */
   margin-right: auto;
@@ -99,12 +103,12 @@ const Flex = styled.div`
 
 const FlexImg = styled.div`
   img {
-    width: 420px;
+    width: 580px;
     text-align: center;
   }
   @media (max-width: 800px) {
     img {
-      width: 90%;
+      width: 100%;
     }
   }
 `;

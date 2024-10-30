@@ -60,7 +60,7 @@ const Text = styled.div`
     color: #000000;
     /* background-color: yellow; */
     margin-bottom: 5px;
-    max-width: 50%;
+    max-width: 70%;
   }
   a {
     margin-top: 10px;
@@ -75,15 +75,17 @@ const Text = styled.div`
     h2 {
       font-size: 29px;
       text-align: center;
-      max-width: 60%;
+      max-width: 80%;
+      font-weight: 800;
     }
     p {
-      font-size: 14px;
-      max-width: 80%;
+      font-size: 16px;
+      max-width: 100%;
+      margin: 10px 0;
       text-align: center;
     }
     a {
-      margin-top: 0;
+      margin-top: 2px;
       text-align: center;
     }
   }
@@ -113,10 +115,11 @@ const FlexImg = styled.div`
   }
 
   @media (max-width: 800px) {
-    width: 90%;
+    width: 100%;
     background-color: blue;
     display: flex;
     justify-content: center;
+    margin-top: 10px;
     img {
       width: 100%;
     }
