@@ -1,6 +1,7 @@
 import Hero from "../home/Hero";
-import Info from '../home/Info'
-import Text from '../home/Text'
+import Info from "../home/Info";
+import Text from "../home/Text";
+// import ImgText from "../home/ImgText";
 
 function Personal() {
   return (
@@ -9,6 +10,7 @@ function Personal() {
         <Hero />
         <Info />
         <Text />
+        {/* <ImgText /> */}
       </div>
     </>
   );
