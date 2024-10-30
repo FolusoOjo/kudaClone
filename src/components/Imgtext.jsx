@@ -104,7 +104,7 @@ const FlexImg = styled.div`
   }
   @media (max-width: 800px) {
     img {
-      width: 100%;
+      width: 90%;
     }
   }
 `;
