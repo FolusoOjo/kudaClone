@@ -49,23 +49,25 @@ const Text = styled.div`
   justify-content: center;
 
   h2 {
-    font-size: 38px;
-    max-width: 300px;
+    font-size: 35px;
+    max-width: 80%;
     color: #40196d;
     margin-bottom: 5px;
+    font-weight: 900;
   }
 
   p {
-    font-size: 14px;
+    font-size: 15px;
     color: #000000;
-    /* background-color: yellow; */
     margin-bottom: 5px;
-    max-width: 70%;
+    max-width: 65%;
+    margin-top: 10px;
   }
   a {
     margin-top: 10px;
     color: #40196d;
-    font-size: 14px;
+    font-weight: 700;
+    font-size: 15px;
   }
 
   @media (max-width: 800px) {
@@ -110,7 +112,7 @@ const FlexImg = styled.div`
   /* border: 2px solid rebeccapurple; */
 
   img {
-    width: 420px;
+    width: 500px;
     text-align: center;
   }
 
