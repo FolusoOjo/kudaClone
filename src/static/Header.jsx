@@ -189,6 +189,6 @@ const Btn = styled.div`
     align-items: center;
     justify-content: space-between;
     /* background-color: yellow; */
-    margin-right: 10px;
+    margin-right: 50px;
   }
 `;
