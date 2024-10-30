@@ -113,11 +113,12 @@ const FlexImg = styled.div`
   }
 
   @media (max-width: 800px) {
-    width: 100%;
+    width: 90%;
+    background-color: blue;
     display: flex;
     justify-content: center;
-    /* img {
-      border: 4px solid brown;
-    } */
+    img {
+      width: 100%;
+    }
   }
 `;
