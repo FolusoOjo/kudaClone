@@ -36,6 +36,10 @@ const Wrapper = styled.div`
   justify-content: center;
 
   background-color: hotpink;
+
+  @media (max-width: 800px) {
+    background-color: black;
+  }
 `;
 
 const Text = styled.div`
@@ -64,6 +68,27 @@ const Text = styled.div`
     color: #40196d;
     font-size: 14px;
   }
+
+  @media (max-width: 800px) {
+    border: 2px solid red;
+    max-width: 100%;
+    padding: 10px;
+    text-align: center;
+    margin: 10px auto 40px;
+
+    h2 {
+      font-size: 22px;
+      font-weight: 800;
+    }
+
+    p {
+      font-size: 12px;
+      text-align: center;
+      /* border: 2px solid red; */
+      width: 100%;
+      margin-top: 5px;
+    }
+  }
 `;
 
 const Flex = styled.div`
@@ -77,7 +102,9 @@ const Flex = styled.div`
   margin-right: auto;
 
   @media (max-width: 800px) {
-    background-color: aqua;
+    background-color: darkgoldenrod;
+    display: flex;
+    flex-direction: column-reverse;
   }
 `;
 
@@ -87,5 +114,11 @@ const FlexImg = styled.div`
   img {
     width: 420px;
     text-align: center;
+  }
+  @media (max-width: 800px) {
+    img {
+      border: 2px solid green;
+      width: 100%;
+    }
   }
 `;
